@@ -97,8 +97,10 @@
 		</div>
 		<div id="home-footer">
 			<p>
-				&copy; 2019-{{ now.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Author.name }}</a>{{ .Site.Params.footerCopyright | safeHTML }}
+				&copy; 2019-{{ now.Format "2006" }} <a href="https://reaves.co">{{ .Site.Author.name }}</a>{{ .Site.Params.footerCopyright | safeHTML }}
 				{{- with (not (in (.Site.Language.Get "disableKinds") "RSS")) }} &#183;{{ end }}
+			</br>
+			All trademarks are property of their respective owners. Kinto is an open-sourced project with no official sponsorships.
 			</p>
 		</div>
 	</div>
