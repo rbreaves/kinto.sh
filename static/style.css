@@ -75,11 +75,14 @@ pre code {
     width: 90%;
     opacity: .9;
   }
-  .highlight pre {
+  .highlight pre,
+  .highlight-copy-btn,
+  #home-social p {
     display: none;
   }
-  .highlight-copy-btn {
-    display: none;
+  table {
+    position:relative;
+    top:-120px;
   }
 }
 @media only screen and (min-width: 601px) {
