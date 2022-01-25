@@ -15,7 +15,7 @@
   function flashCopyMessage(el, msg) {
     el.textContent = msg;
     setTimeout(function() {
-      el.textContent = "Copy";
+      el.textContent = "📋";
     }, 1000);
   }
 
@@ -31,7 +31,7 @@
   function addCopyButton(containerEl) {
     var copyBtn = document.createElement("button");
     copyBtn.className = "highlight-copy-btn";
-    copyBtn.textContent = "Copy";
+    copyBtn.textContent = "📋";
 
     var codeEl = containerEl.firstElementChild;
     copyBtn.addEventListener('click', function() {
