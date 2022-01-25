@@ -109,6 +109,8 @@ hr {
 }
 
 table {
+  position: relative;
+  top: -70px;
   border: none;
   border-collapse: collapse;
   margin: 0;
@@ -124,7 +126,7 @@ table caption {
 
 table tr {
   border: none;
-  padding: .35em;
+  // padding: .35em;
 }
 
 table th,
@@ -221,6 +223,8 @@ table th {
 
 .highlight {
     position: relative;
+    left: 50%;
+    transform: translateX(-57.5%);
 }
 
 .highlight pre {
@@ -456,6 +460,7 @@ p.img-404 {
 }
 
 #home-center {
+  width: 90%;
   display: flex;
   flex-grow: 1;
   flex-direction: column;
