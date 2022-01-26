@@ -34,6 +34,11 @@ textarea {
   font-family: $fonts;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 pre,
 code,
 pre tt {
@@ -181,9 +186,20 @@ table.quotes td.quotes {
   text-align: right;
 }
 
+#home-center {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+}
 
 
 @media screen and (max-width: 1190px) {
+    #home-center {
+    width: 110%;
+  }
+
   table {
     border: 0;
   }
@@ -212,7 +228,7 @@ table.quotes td.quotes {
   table td {
     border-bottom: none;
     display: block;
-    font-size: .8em;
+    font-size: 1em;
     text-align: center;
     // background-color: #888;
   }
@@ -238,6 +254,10 @@ table.quotes td.quotes {
 
   table td:last-child {
     border-bottom: 0;
+  }
+
+  .color {
+    font-size: 1.5em;
   }
 }
 
@@ -506,14 +526,6 @@ p.img-404 {
       }
     }
   }
-}
-
-#home-center {
-  width: 90%;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  justify-content: center;
 }
 
 #home-title {
